@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    <style>
+        table, td {
+  border: 1px solid black;
+	padding : 5px;
+    margin: 5px;
+}
+    </style>
+    </head>
+    <body>
+        <script type = "text/javascript" src = "keys.js"></script>
+       
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+        <script src="firebase_ques.js"></script>
+       <script>
+       function myFunction() {
+        contact_details.remove();
+        location.reload();
+      }
+      </script>
+        <button id="clear" onclick="myFunction()">Clear Database</button>
+
+        <table id="myTable">
+            <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Message</td>
+                <td>File-location</td>
+                <td>Time recorded</td>
+              </tr>
+        </table>
+      
+    </body>
+</html>
