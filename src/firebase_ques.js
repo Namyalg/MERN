@@ -3,7 +3,7 @@ function loadXMLDoc() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
      
-      console.log(JSON.parse(this.responseText));
+      //console.log(JSON.parse(this.responseText));
       var resp = JSON.parse(this.responseText);
       var firebaseConfig = {
         apiKey: resp.apiKey,
