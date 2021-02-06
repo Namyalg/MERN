@@ -1,0 +1,27 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "firebase_ques.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server -p 8000",
+    "lambda-build": "netlify-lambda build functions && node -p 'process.env'",
+    "netlify": "node_modules/.bin/netlify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Namyalg/MERN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Namyalg/MERN/issues"
+  },
+  "homepage": "https://github.com/Namyalg/MERN#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "http-server": "^0.12.3",
+    "netlify-cli": "^3.5.0"
+  }
+}

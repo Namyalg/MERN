@@ -1,0 +1,86 @@
+<!--  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        
+    /*    fetch(`/.netlify/functions/get-key`)
+                .then(res => { console.log(res.json()) })
+    
+                fetch(`/.netlify/functions/get-key`)
+                .then(function(res){
+                    console.log(res.json())
+                    console.log(res.status)
+                })
+                .then(function(res){
+                    console.log(res)
+                })(*)*/
+                //.then(res => console.log(res.json()))
+                //.then(res => console.log(Promise.resolve(res.json())))
+                function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     
+      console.log(this.responseText);
+    }
+  };
+  xhttp.open("GET", `/.netlify/functions/get-key`, true);
+  xhttp.send();
+}
+loadXMLDoc();
+console.log("hello");
+    </script>
+</body>
+
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    <style>
+        table, td {
+  border: 1px solid black;
+	padding : 5px;
+    margin: 5px;
+}
+    </style>
+    </head>
+    <body>
+        <!--<script type = "text/javascript" src = "keys.js"></script>-->
+       
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+        <script src="firebase_ques.js"></script>
+       <script>
+       function myFunction() {
+        contact_details.remove();
+        location.reload();
+      }
+      </script>
+        <button id="clear" onclick="myFunction()">Clear Database</button>
+
+        <table id="myTable">
+            <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Message</td>
+                <td>File-location</td>
+                <td>Time recorded</td>
+              </tr>
+        </table>
+      
+    </body>
+</html>
